@@ -252,16 +252,17 @@ a:hover {
 
 .credit {
   position: relative;
-  font-family: 'Roboto';
-  font-size: 1.2vw;
+  font-family: 'League Gothic';
+  font-size: 2vw;
   color: #fff;
   margin-bottom: 20px;
+  font-weight: lighter;
   padding:0 80px;
-  line-height: 0.9em;
+  line-height: 1em;
   text-align: center;
 }
 
 .over {
   position:absolute;
-  z-index: 99999;
+  z-index: 99999 !important;
 }
