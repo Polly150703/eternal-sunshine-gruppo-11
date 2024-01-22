@@ -44,7 +44,7 @@ angular.module('plunker').controller('MainCtrl', ['$scope', '$http', '$window', 
     var src = "model/assets/img_" + index + ".png";
     img.setAttribute("src", src);
     img.setAttribute("class", "over");
-    $("img .over").remove();
+    $("img.over").remove();
     var el = document.getElementById(imgs[index-1]);
     var rect = el.getBoundingClientRect();
     x = e.clientX - rect.left;
@@ -56,7 +56,7 @@ angular.module('plunker').controller('MainCtrl', ['$scope', '$http', '$window', 
       img.style.left = x + "px";
       el.appendChild(img);
     } else {
-      $("img .over").remove();
+      $("img.over").remove();
     }
     
     
