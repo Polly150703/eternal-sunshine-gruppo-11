@@ -263,4 +263,5 @@ a:hover {
 
 .over {
   position:absolute;
+  z-index: 99999;
 }
