@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+  <head>   
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-sanitize.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-2.5.0.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/mainCtrl.js"></script>
+    <script src="scripts/directive/content.js"></script>
+    <script src="scripts/directive/graphic.js"></script>
+    <script src="scripts/directive/mini_graphic.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+
+  <body ng-app="plunker">
+    <div ng-controller="MainCtrl">
+      <nav class="navbar navbar-default">
+        <div class="navbar-header">
+            <a class="navbar-brand section tk" href="#" ng-click="redirect('start')">Start</a> 
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li class="section" ng-repeat="content in contentMenu"><a ng-click="redirect(content.name)">{{content.title}}</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="rowContent">
+        <div id="start" class="content">
+          <div ng-include="'model/start.html'"></div>
+        </div>
+        <div id="char" class="content">
+          <div ng-include="'model/char.html'"></div>
+        </div>
+        <div id="leg" class="content">
+          <div ng-include="'model/legend.html'"></div>
+        </div>
+        <div id="order" class="content">
+          <div ng-include="'model/order.html'"></div>
+        </div>
+        <div id="recon" class="content">
+          <div ng-include="'model/recon.html'"></div>
+        </div>
+        <div id="comp" class="content">
+          <div ng-include="'model/comp.html'"></div>
+        </div>
+        <div id="credit" class="content">
+          <div ng-include="'model/credit.html'"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
