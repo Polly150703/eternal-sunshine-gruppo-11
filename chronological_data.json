@@ -42,7 +42,7 @@
   {
     "minute": 180,
     "MD_relationship": 0,
-    "CJ_relationship": "#237FFF",
+    "CJ_relationship": "#2782FF",
     "PC_relationship": 0,
     "cute_frequency": 0,
     "cancellation": 0,
@@ -52,7 +52,7 @@
   {
     "minute": 195,
     "MD_relationship": 0,
-    "CJ_relationship": "#237FFF",
+    "CJ_relationship": "#2782FF",
     "PC_relationship": 0,
     "cute_frequency": 1,
     "cancellation": 0,
@@ -62,7 +62,7 @@
   {
     "minute": 210,
     "MD_relationship": 0,
-    "CJ_relationship": "#1777FC",
+    "CJ_relationship": "#2782FF",
     "PC_relationship": 0,
     "cute_frequency": 1,
     "cancellation": 0,
@@ -970,7 +970,7 @@
     "comments": ""
   },
   {
-    "minute": 3046,
+    "minute": 3060,
     "MD_relationship": 0,
     "CJ_relationship": "#FF7500",
     "PC_relationship": 0,
@@ -1152,7 +1152,7 @@
   {
     "minute": 3780,
     "MD_relationship": 0,
-    "CJ_relationship": "#2B48FF",
+    "CJ_relationship": "#2C85FF",
     "PC_relationship": "#FFF45F",
     "cute_frequency": 1,
     "cancellation": 1,
